@@ -1,0 +1,21 @@
+[project]
+name = "chainlit-datalayer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "asyncpg>=0.30.0",
+    "boto3>=1.38.10",
+    "chainlit>=2.5.5",
+    "distil-whisper-fastrtc>=0.1.0.post1",
+    "elevenlabs>=1.58.1",
+    "fastrtc>=0.0.23",
+    "langchain>=0.3.25",
+    "langchain-cohere>=0.4.4",
+    "langchain-community>=0.3.23",
+    "langchain-groq>=0.3.2",
+    "langchain-qdrant>=0.2.0",
+    "langgraph>=0.4.2",
+    "numpy>=2.2.5",
+]
