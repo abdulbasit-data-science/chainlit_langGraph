@@ -1,4 +1,4 @@
-Chainlit and LangGraph  Project
+Chainlit and LangGraph Data Layer Project
 A PostgreSQL data layer for Chainlit applications integrated with LangGraph, featuring persistent storage for chat data and Google OAuth authentication. This project uses uv for dependency management and supports cloud storage uploads for file attachments.
 Works with Chainlit >= 2.0.0 and LangGraph.
 Features
@@ -6,11 +6,7 @@ Features
 PostgreSQL data layer defined in prisma/schema.prisma
 LangGraph integration for structured conversation workflows
 Cloud storage support for file uploads (AWS S3, Google Cloud Storage)
-Two modes:
-Text-to-text input/output (text_to_text.py)
 Speech and text-to-text input/output (app.py)
-
-
 Google OAuth authentication for secure user access
 Persistent storage for threads, users, steps, elements, and feedback
 
@@ -47,7 +43,7 @@ DATABASE_URL=postgresql://root:root@localhost:5432/postgres
 Local S3 (Fake) Configuration (for testing):
 BUCKET_NAME=my-bucket
 APP_AWS_ACCESS_KEY=random-key
-APP_AWSEv_SECRET_KEY=random-key
+APP_AWS_SECRET_KEY=random-key
 APP_AWS_REGION=eu-central-1
 DEV_AWS_ENDPOINT=http://localhost:4566
 
@@ -71,12 +67,7 @@ npx prisma studio
 
 5. Run the Application
 
-Text-to-Text Mode:
-uv run chainlit run text_to_text.py
-
-
-Speech and Text-to-Text Mode:
-uv run chainlit run app.py
+Speech and Text-to-Text Mode:uv run chainlit run app.py
 
 
 
@@ -105,6 +96,8 @@ APP_GCS_CLIENT_EMAIL=your-service-account-email
 APP_GCS_PRIVATE_KEY=your-private-key
 
 Create a service account with Storage Object Viewer and Creator/Admin permissions. Generate a key from the "Keys" tab in the Google Cloud Console.
+Live Deployment
+This project has been deployed to Google Cloud. Check live here.
 Troubleshooting
 
 Ensure all environment variables are correctly set in .env.
