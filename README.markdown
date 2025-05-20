@@ -1,4 +1,4 @@
-# Chainlit and LangGraph Data Layer Project
+# Chainlit and LangGraph  Project
 
 A PostgreSQL data layer for Chainlit applications integrated with LangGraph, featuring persistent storage for chat data and Google OAuth authentication. This project uses `uv` for dependency management and supports cloud storage uploads for file attachments.
 
@@ -26,8 +26,8 @@ Works with Chainlit >= `2.0.0` and LangGraph.
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/abdulbasit-data-science/chainlit_langGraph
+cd chainlit_langGraph
 ```
 
 ### 2. Install Dependencies
@@ -146,7 +146,7 @@ Create a service account with Storage Object Viewer and Creator/Admin permission
 
 ## Live Deployment
 
-This project has been deployed to Google Cloud. Check live [here](<your-deployment-url>).
+This project has been deployed to Google Cloud. Check live https://chainlit-app-738232481516.us-central1.run.app
 
 ## Troubleshooting
 
